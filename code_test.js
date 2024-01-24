@@ -1,3 +1,11 @@
-let rlSync = require('readline-sync');
-let name = rlSync.question("What's your name?\n");
-console.log(`Good morning, ${name}`);
+function arrayToString(array) {
+  let string = ''
+  
+  for (index = 0; index < array.length; index += 1) {
+    string += String(array[index]);
+  }
+
+  return string;
+}
+
+console.log(arrayToString([1, 2, 'a', 'b', 4]));
