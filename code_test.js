@@ -1,11 +1,9 @@
-function arrayToString(array) {
-  let string = ''
-  
-  for (index = 0; index < array.length; index += 1) {
-    string += String(array[index]);
-  }
-
-  return string;
+let gladiator = {
+  name: 'Nick',
+  weapon: 'sword',
+  swing: function(weapon) {
+    console.log(`I'm swinging my ${weapon}!`);
+  },
 }
 
-console.log(arrayToString([1, 2, 'a', 'b', 4]));
+console.log(gladiator.name);
