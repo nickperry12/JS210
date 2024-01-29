@@ -110,8 +110,6 @@ Return `-1` if no match
 */
 
 function lastIndexOf(stringOne, stringTwo) {
-  let iterateLimit = stringOne.length - stringTwo.length;
-
   for (let outerIdx = stringOne.length - 1; outerIdx > 0; outerIdx -= 1) {
     let matchCount = 0;
 
